@@ -88,3 +88,20 @@ sources:
             description: Improvement surcharge
           - name: total_amount
             description: Total amount charged
+      - name: fhv_tripdata
+        columns:
+          - name: dispatching_base_num
+            description: the base / dispatch company ID that sent the car.
+          - name: pickup_datetime
+            description: timestamps when passenger pickup occurred.
+          - name: dropOff_datetime
+            description: timestamps when passenger dropoff occurred.
+          - name: PULocationID
+            description: zone IDs for pickup.
+          - name: DOLocationID
+            description: zone IDs for dropoff
+          - name: SR_Flag
+            description: a flag field in the FHV files.
+          - name: Affiliated_base_number
+            description: another base/company identifier (company the vehicle is affiliated with).
+
